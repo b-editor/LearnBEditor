@@ -1,60 +1,60 @@
 [
-	{
-		"Header": "How to use",
-		"Pages": [
-			{
-				"Header": "Create new project.",
-				"Markdown": "./how_to_use/CreateProject.md"
-			},
-			{
-				"Header": "Add a clip.",
-				"Markdown": "./how_to_use/AddClip.md"
-			},
-			{
-				"Header": "Add a effect.",
-				"Markdown": "./how_to_use/AddEffect.md"
-			},
-			{
-				"Header": "Move a clip.",
-				"Markdown": "./how_to_use/MoveClip.md"
-			},
-			{
-				"Header": "Setting",
-				"Markdown": "./how_to_use/Settings.md"
-			},
-			{
-				"Header": "Data binding",
-				"Markdown": "./how_to_use/DataBinding.md"
-			}
-		]
-	},
-	{
-		"Header": "Keywords",
-		"Pages": [
-			{
-				"Header": "Clip",
-				"Markdown": "./keywords/Clip.md"
-			},
-			{
-				"Header": "Library panel",
-				"Markdown": "./keywords/LibraryPanel.md"
-			},
-			{
-				"Header": "Property",
-				"Markdown": "./keywords/Property.md"
-			},
-			{
-				"Header": "Scene",
-				"Markdown": "./keywords/Scene.md"
-			},
-			{
-				"Header": "Timeline",
-				"Markdown": "./keywords/Timeline.md"
-			},
-			{
-				"Header": "Toolbar",
-				"Markdown": "./keywords/Toolbar.md"
-			},
-		]
-	}
+    {
+        "Header": "How to use",
+        "Pages": [
+            {
+                "Header": "Create new project.",
+                "Markdown": "./how_to_use/CreateProject.md"
+            },
+            {
+                "Header": "Add a clip.",
+                "Markdown": "./how_to_use/AddClip.md"
+            },
+            {
+                "Header": "Add a effect.",
+                "Markdown": "./how_to_use/AddEffect.md"
+            },
+            {
+                "Header": "Move a clip.",
+                "Markdown": "./how_to_use/MoveClip.md"
+            },
+            {
+                "Header": "Setting",
+                "Markdown": "./how_to_use/Settings.md"
+            },
+            {
+                "Header": "Data binding",
+                "Markdown": "./how_to_use/DataBinding.md"
+            }
+        ]
+    },
+    {
+        "Header": "Keywords",
+        "Pages": [
+            {
+                "Header": "Clip",
+                "Markdown": "./keywords/Clip.md"
+            },
+            {
+                "Header": "Library panel",
+                "Markdown": "./keywords/LibraryPanel.md"
+            },
+            {
+                "Header": "Property",
+                "Markdown": "./keywords/Property.md"
+            },
+            {
+                "Header": "Scene",
+                "Markdown": "./keywords/Scene.md"
+            },
+            {
+                "Header": "Timeline",
+                "Markdown": "./keywords/Timeline.md"
+            },
+            {
+                "Header": "Toolbar",
+                "Markdown": "./keywords/Toolbar.md"
+            }
+        ]
+    }
 ]
