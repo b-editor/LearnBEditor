@@ -1,8 +1,5 @@
 ## プロジェクトを作成する
 
-![img1](../images/CreateProject/screenshot1.png)
-![img2](../images/CreateProject/screenshot2.jpg)
-
 * 上の画像の __[新規作成]__ または 左から1番目のボタンをクリックします。
 * 作成するプロジェクトの設定を表示されるダイアログで設定します。
 * __[作成]__ をクリックするとプロジェクトを作成することができます。
