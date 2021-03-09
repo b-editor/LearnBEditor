@@ -113,4 +113,31 @@ public class BlankEffect : ImageEffect
 + は追加、- は削除、+- は更新です。
 ```
 
-上のように変更してビルド、
+上のように変更してビルド、クリップを追加して作成した "空のエフェクト" を追加します。  
+以下のようになっていたら成功です。
+![image]()
+
+### プロパティの種類
+
+* ButtonComponent - ボタンで特定のアクションを実行します。
+* CheckProperty - チェックボックスでブーリアンを設定します。
+* ColorAnimationProperty - 変化する色を設定します。
+* ColorProperty - 色を設定します。
+* DocumentProperty - 複数行の文字列を設定します。
+* EaseProperty - 変化する値を設定します。
+* Group - プロパティをまとめます。
+    * ExpandGroup - プロパティをエクスパンダでまとめます。
+        * Coordinate - XYZ, CenterXYZの座標を設定します。
+        * Blend - 透明度、色、合成モードを設定します。
+        * Angle - XYZ軸の角度を設定します。
+        * Material - 環境色、反射色、輝きを設定します。
+        * Zoom - XYZのスケールを設定します。
+    * DialogProperty - プロパティをダイアログでまとめます。
+* FileProperty - ファイルを設定します。
+* FolderProperty - フォルダを設定します。
+* FontProperty - フォントを設定します。
+* LabelComponent - 文字列を表示します。
+* SelectorProperty - リストからアイテムのインデックスを選択します。
+* SelectorProperty{T} - リストからアイテムを選択します。
+* TextProperty - 文字列を設定します。
+* ValueProperty - 値を設定します。
