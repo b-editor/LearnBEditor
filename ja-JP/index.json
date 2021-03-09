@@ -62,7 +62,7 @@
         "Pages": [
             {
                 "Header": "プロジェクトの作成",
-                "Markdown": "develop/create_project.md"
+                "Markdown": "develop_plugin/create_project.md"
             }
         ]
     }
