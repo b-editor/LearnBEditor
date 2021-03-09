@@ -63,6 +63,10 @@
             {
                 "Header": "プロジェクトの作成",
                 "Markdown": "develop_plugin/create_project.md"
+            },
+            {
+                "Header": "エフェクトの作成",
+                "Markdown": "develop_plugin/create_effect.md"
             }
         ]
     }
