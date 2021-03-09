@@ -56,5 +56,14 @@
                 "Markdown": "keywords/Toolbar.md"
             }
         ]
+    },
+    {
+        "Header": "プラグイン開発",
+        "Pages": [
+            {
+                "Header": "プロジェクトの作成",
+                "Markdown": "develop/create_project.md"
+            }
+        ]
     }
 ]
