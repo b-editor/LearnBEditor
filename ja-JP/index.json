@@ -29,6 +29,15 @@
         ]
     },
     {
+        "Header": "エフェクト",
+        "Pages": [
+            {
+                "Header": "２階調化",
+                "Markdown": "effects/binarization.md"
+            }
+        ]
+    },
+    {
         "Header": "キーワード",
         "Pages": [
             {
