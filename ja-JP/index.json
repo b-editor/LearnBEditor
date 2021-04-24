@@ -34,6 +34,86 @@
             {
                 "Header": "２階調化",
                 "Markdown": "effects/binarization.md"
+            },
+            {
+                "Header": "ぼかし",
+                "Markdown": "effects/blur.md"
+            },
+            {
+                "Header": "縁取り (テキスト)",
+                "Markdown": "effects/border-text.md"
+            },
+            {
+                "Header": "縁取り",
+                "Markdown": "effects/border.md"
+            },
+            {
+                "Header": "明るさ調整",
+                "Markdown": "effects/brightness.md"
+            },
+            {
+                "Header": "クロマキー",
+                "Markdown": "effects/chroma-key.md"
+            },
+            {
+                "Header": "円形グラデーション",
+                "Markdown": "effects/circular-gradient.md"
+            },
+            {
+                "Header": "カラーキー",
+                "Markdown": "effects/color-key.md"
+            },
+            {
+                "Header": "コントラスト調整",
+                "Markdown": "effects/contrast.md"
+            },
+            {
+                "Header": "膨張",
+                "Markdown": "effects/dilate.md"
+            },
+            {
+                "Header": "ドロップシャドウ",
+                "Markdown": "effects/drop-shadow.md"
+            },
+            {
+                "Header": "収縮",
+                "Markdown": "effects/erode.md"
+            },
+            {
+                "Header": "ガンマ調整",
+                "Markdown": "effects/gamma.md"
+            },
+            {
+                "Header": "グレースケール",
+                "Markdown": "effects/grayscale.md"
+            },
+            {
+                "Header": "画像分割",
+                "Markdown": "effects/image-split.md"
+            },
+            {
+                "Header": "線形グラデーション",
+                "Markdown": "effects/linear-gradient.md"
+            },
+            {
+                "Header": "マスク",
+                "Markdown": "effects/mask.md"
+            },
+            {
+                "Header": "ネガポジ",
+                "Markdown": "effects/negaposi.md"
+            },
+            {
+                "Header": "RGB調整",
+                "Markdown": "effects/rgb-correction.md"
+            },
+            {
+                "Header": "セピア",
+                "Markdown": "effects/sepia.md"
+            },
+            {
+                "Header": "Xor",
+                "Markdown": "effects/xor.md"
             }
         ]
     },

@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://github.com/b-editor/BEditor/raw/main/docs/example/binarization.png)
+![](https://github.com/b-editor/BEditor/raw/main/docs/example/binarization.jpg)
 
 ### Description
 
