@@ -32,6 +32,10 @@
         "Header": "エフェクト",
         "Pages": [
             {
+                "Header": "概要",
+                "Markdown": "effects/overview.md"
+            },
+            {
                 "Header": "２階調化",
                 "Markdown": "effects/binarization.md"
             },
