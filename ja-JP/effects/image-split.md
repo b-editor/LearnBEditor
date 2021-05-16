@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://github.com/b-editor/BEditor/raw/main/docs/example/image-split.jpg)
+![](https://beditor.net/imgs/example/image-split.jpg)
 
 ### Description
 

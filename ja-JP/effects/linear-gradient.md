@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://github.com/b-editor/BEditor/raw/main/docs/example/linear-gradient.jpg)
+![](https://beditor.net/imgs/example/linear-gradient.jpg)
 
 ### Description
 

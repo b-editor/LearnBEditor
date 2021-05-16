@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://github.com/b-editor/BEditor/raw/main/docs/example/sepia.jpg)
+![](https://beditor.net/imgs/example/sepia.jpg)
 
 ### Description
 

@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://github.com/b-editor/BEditor/raw/main/docs/example/color-key.jpg)
+![](https://beditor.net/imgs/example/color-key.jpg)
 
 ### Description
 

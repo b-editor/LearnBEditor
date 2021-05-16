@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://github.com/b-editor/BEditor/raw/main/docs/example/grayscale.jpg)
+![](https://beditor.net/imgs/example/grayscale.jpg)
 
 ### Description
 

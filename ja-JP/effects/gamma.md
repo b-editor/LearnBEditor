@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://github.com/b-editor/BEditor/raw/main/docs/example/gamma.jpg)
+![](https://beditor.net/imgs/example/gamma.jpg)
 
 ### Description
 

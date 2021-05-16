@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://github.com/b-editor/BEditor/raw/main/docs/example/blur.jpg)
+![](https://beditor.net/imgs/example/blur.jpg)
 
 ### Description
 

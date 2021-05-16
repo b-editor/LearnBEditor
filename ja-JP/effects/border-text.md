@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://github.com/b-editor/BEditor/raw/main/docs/example/border-text.jpg)
+![](https://beditor.net/imgs/example/border-text.jpg)
 
 ### Description
 

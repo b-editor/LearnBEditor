@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://github.com/b-editor/BEditor/raw/main/docs/example/rgb-correction.jpg)
+![](https://beditor.net/imgs/example/rgb-correction.jpg)
 
 ### Description
 

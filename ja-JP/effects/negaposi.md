@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://github.com/b-editor/BEditor/raw/main/docs/example/negaposi.jpg)
+![](https://beditor.net/imgs/example/negaposi.jpg)
 
 ### Description
 

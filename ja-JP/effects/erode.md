@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://github.com/b-editor/BEditor/raw/main/docs/example/erode.jpg)
+![](https://beditor.net/imgs/example/erode.jpg)
 
 ### Description
 
