@@ -1,4 +1,5 @@
 - header: "使い方"
+  description: ""
   pages:
     - header: "新しいプロジェクトを作成する。"
       markdown: "how-to-use/create-project.md"
@@ -14,6 +15,7 @@
       markdown: "how-to-use/data-binding.md"
 
 - header: "エフェクト"
+  description: ""
   pages:
     - header: "概要"
       markdown: "effects/overview.md"
@@ -61,6 +63,7 @@
       markdown: "effects/xor.md"
 
 - header: "キーワード"
+  description: ""
   pages: 
     - header: "クリップ"
       markdown: "keywords/clip.md"
@@ -76,6 +79,7 @@
       markdown: "keywords/toolbar.md"
 
 - header: "プラグイン開発"
+  description: ""
   pages: 
     - header: "プロジェクトの作成"
       markdown: "develop-plugin/create-project.md"
