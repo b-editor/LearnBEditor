@@ -1,17 +1,16 @@
 ## エフェクトを作成する
 
-* [プラグイン用のC#プロジェクトを作成する。](https://beditor.net/docs/develop_plugin/create_project)を参照して、プラグインを作成します。
+* [プラグイン用のC#プロジェクトを作成する。](https://beditor.net/Document?page=/develop-plugin/create-project)を参照して、プラグインを作成します。
 
 ``` C#
 using System.Collections.Generic;
-using System.Runtime.Serialization;
 
 using BEditor.Data;
 using BEditor.Data.Primitive;
+using BEditor.Data.Property;
 using BEditor.Drawing;
 using BEditor.Drawing.Pixel;
 
-[DataContract]
 public class BlankEffect : ImageEffect
 {
     public BlankEffect()
@@ -24,12 +23,15 @@ public class BlankEffect : ImageEffect
     // プロパティで表示されます。
     public override string Name => "空のエフェクト";
 
-    // UIに表示するプロパティを返します。
-    public override IEnumerable<PropertyElement> Properties => Array.Empty<PropertyElement>();
-
     // レンダリング時に呼び出されます。
-    public override void Render(EffectRenderArgs<Image<BGRA32>> args)
+    public override void Apply(EffectApplyArgs<Image<BGRA32>> args)
     {
+    }
+
+    // UIに表示するプロパティを返します。
+    public override IEnumerable<PropertyElement> GetProperties()
+    {
+        yield break;
     }
 
     // プロジェクトを開いたとき、追加時、削除をやり直した時に呼び出されます。
@@ -70,51 +72,43 @@ public class Plugin
 
 ``` C#
 using System.Collections.Generic;
-using System.Runtime.Serialization;
 
 using BEditor.Data;
 using BEditor.Data.Primitive;
-+ using BEditor.Data.Property;
+using BEditor.Data.Property;
 using BEditor.Drawing;
 using BEditor.Drawing.Pixel;
 
-[DataContract]
 public class BlankEffect : ImageEffect
 {
-+   public static readonly CheckPropertyMetadata CheckboxMetadata = new("チェックボックス");
+    public static readonly DirectEditingProperty<BlankEffect, CheckProperty> CheckBoxProperty
+        = EditingProperty.RegisterDirect<CheckProperty, BlankEffect>(
+            nameof(Checkbox),
+            owner => owner.CheckBox,
+            (owner, obj) => owner.CheckBox = obj,
+            EditingPropertyOptions.Create<CheckProperty>(new CheckPropertyMetadata("名前")).Serialize());
 
     public BlankEffect()
     {
-+       Checkbox = new(CheckboxMetadata);
     }
 
     public override string Name => "空のエフェクト";
 
-+-  public override IEnumerable<PropertyElement> Properties => new PropertyElement[] { Checkbox };
+    public CheckProperty Checkbox { get; private set; }
 
-+   [DataMember]
-+   public CheckProperty Checkbox { get; private set; }
-
-    public override void Render(EffectRenderArgs<Image<BGRA32>> args)
+    public override void Apply(EffectApplyArgs<Image<BGRA32>> args)
     {
     }
 
-    protected override void OnLoad()
+    public override IEnumerable<PropertyElement> GetProperties()
     {
-+       Checkbox.Load(CheckboxMetadata);
-    }
-
-    protected override void OnUnload()
-    {
-+       Checkbox.Unload();
+        yield return Checkbox;
     }
 }
-
-+ は追加、- は削除、+- は更新です。
 ```
 
 上のように変更してビルド、クリップを追加して作成した "空のエフェクト" を追加します。  
-以下のようになっていたら成功です。
+以下のようになっていたら成功です。  
 ![image]()
 
 ### プロパティの種類

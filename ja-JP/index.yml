@@ -79,5 +79,7 @@
   pages: 
     - header: "プロジェクトの作成"
       markdown: "develop-plugin/create-project.md"
+    - header: "プロジェクトをデバッグする"
+      markdown: "develop-plugin/debug-project.md"
     - header: "エフェクトの作成"
       markdown: "develop-plugin/create-effect.md"

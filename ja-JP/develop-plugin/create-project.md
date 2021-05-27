@@ -2,16 +2,8 @@
 
 ### 開発環境
 BEditorのプラグインを開発するには、
-.NET5が使える環境が必要です。
-
-例えば:
-* Visual Studio
-* Rider
-* Visual Studio Code
-
-などです。
-
-このページではVisual Studio Codeでの開発方法を説明します。
+.NET5が使える環境が必要です。  
+このページではVisual Studio Codeでの開発方法を説明します。  
 
 ### プロジェクトを作成する。
 
@@ -24,7 +16,7 @@ $ dotnet new classlib -o <プロジェクト名>
 $ code ./<プロジェクト名>
 ```
 
-生成された <プロジェクト名>.csprojファイルの設定をします。
+生成された プロジェクトファイル (<プロジェクト名>.csproj)の設定をします。  
 以下をコピペ、(実行ファイルがあるフォルダ)と(プロジェクト名)は置き換えてください。
 
 ``` xml
@@ -35,6 +27,7 @@ $ code ./<プロジェクト名>
         <OutputPath>(実行ファイルがあるフォルダ)\user\plugins\(プロジェクト名)</OutputPath>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)'=='Debug'">
@@ -42,33 +35,29 @@ $ code ./<プロジェクト名>
     </PropertyGroup>
 
     <ItemGroup>
-        <Reference Include="BEditor.Core">
-            <HintPath>(実行ファイルがあるフォルダ)\BEditor.Core.dll</HintPath>
-        </Reference>
-        <Reference Include="BEditor.Graphics">
-            <HintPath>(実行ファイルがあるフォルダ)\BEditor.Graphics.dll</HintPath>
-        </Reference>
-        <Reference Include="BEditor.Drawing">
-            <HintPath>(実行ファイルがあるフォルダ)\BEditor.Drawing.dll</HintPath>
-        </Reference>
-        <Reference Include="BEditor.Media">
-            <HintPath>(実行ファイルがあるフォルダ)\BEditor.Media.dll</HintPath>
-        </Reference>
-        <!-- 0.0.6以降の場合 -->
-        <Reference Include="BEditor.Audio">
-            <HintPath>(実行ファイルがあるフォルダ)\BEditor.Audio.dll</HintPath>
-        </Reference>
-
-        <!-- 入れると便利 -->
-        <PackageReference Include="System.Reactive" Version="5.0.0" />
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
-
-        <!-- エフェクトなどを追加する系のプラグインの場合入れると便利です -->
-        <PackageReference Include="ReactiveProperty" Version="7.8.0" />
+        <PackageReference Include="BEditor.Audio" Version="0.1.3" />
+        <PackageReference Include="BEditor.Compute" Version="0.1.3" />
+        <PackageReference Include="BEditor.Core" Version="0.1.3" />
+        <PackageReference Include="BEditor.Drawing" Version="0.1.3" />
+        <PackageReference Include="BEditor.Graphics" Version="0.1.3" />
+        <PackageReference Include="BEditor.Media" Version="0.1.3" />
+        <PackageReference Include="BEditor.Packaging" Version="0.1.3" />
+        <PackageReference Include="BEditor.Settings" Version="0.1.3" />
     </ItemGroup>
 
 </Project>
+```
+
+### パッケージソースの追加
+`./packages` フォルダーを作成、BEditorのリリースから `PluginDevelop.zip` を展開し全ての `*.nuget` ファイルを入れます。  
+`./Nuget.config` ファイルを作成して以下をコピペします。
+``` xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <packageSources>
+    <add key="BEditor Local" value=".\packages" />
+  </packageSources>
+</configuration>
 ```
 
 ### アセンブリのエントリーポイント
@@ -78,12 +67,13 @@ Class1.cs の namespace <プロジェクト名> 内を以下のようにしま�
 ``` C#
 public class Plugin
 {
-    public static void Register(string[] args)
+    public static void Register()
     {
         // PluginクラスのRegisterメソッドが
         // アセンブリのエントリーポイントになります。
 
-        // ここでプラグインクラスの登録やエフェクトの追加、サービスの登録などを行います。
+        // ここでプラグインクラスの登録やエフェクトの追加、
+        // サービスの登録などを行います。
     }
 }
 ```
@@ -94,24 +84,33 @@ public class Plugin
 以下のように書き換えます。
 
 ``` C#
+using System;
 using BEditor.Plugin;
 
 public class SamplePlugin : PluginObject
 {
     public SamplePlugin(PluginConfig config) : base(config)
     {
-
     }
 
+    // プラグインの名前
     public override string PluginName => "サンプルプラグイン";
+
+    // プラグインの説明
     public override string Description => "プラグインの説明";
 
-    public override SettingRecord Settings { get; set; } = new SettingRecord();
+    // プラグインを識別するのId
+    // 開発環境では Zero のままで大丈夫ですが、
+    // 公開する場合はGUID生成ツールなどで生成したIdを指定してください。
+    public override Guid Id { get; } = Guid.Parse("00000000-0000-0000-0000-000000000000");
+
+    // プラグインの設定、詳しくは https://github.com/b-editor/BEditor/blob/main/extensions/BEditor.Extensions.AviUtl/EntryPlugin.cs#L360 をご覧ください。
+    public override SettingRecord Settings { get; set; } = new();
 }
 
 public class Plugin
 {
-    public static void Register(string[] args)
+    public static void Register()
     {
         PluginBuilder.Configure<SamplePlugin>()
             .Register();
@@ -126,5 +125,4 @@ dotnet build
 ```
 
 でビルドし、<実行ファイルがあるフォルダ>\user\plugins\<プロジェクト名>\<プロジェクト名>.dllが存在することを確認します。  
-BEditorを起動しプラグインを読み込むかのダイアログが表示されたら、チェックボックスにチェックを入れて閉じます、  
-設定を開き、読み込まれているプラグインに作成したプラグインがあれば正常に読み込まれています。
+プラグインを管理を開き、読み込まれているプラグインに作成したプラグインがあれば正常に読み込まれています。
