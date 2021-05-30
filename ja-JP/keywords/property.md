@@ -3,7 +3,7 @@
 * エフェクトの設定を構成する要素
 * 現状16種類のプロパティがあります。
     * ButtonComponent - ボタンで特定のアクションを実行します。
-    * CheckProperty - チェックボックスでブーリアンを設定します。
+    * CheckProperty - トグルボタンでブーリアンを設定します。
     * ColorAnimationProperty - 変化する色を設定します。
     * ColorProperty - 色を設定します。
     * DialogProperty - プロパティをダイアログでまとめます。
