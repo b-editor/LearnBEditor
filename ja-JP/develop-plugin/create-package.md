@@ -4,8 +4,6 @@
 パッケージを作成するにはメインウィンドウの  
  __プラグイン>プラグインを管理>プラグインのパッケージを作成__ を開きます。
 
-![screenshot](https://beditor.net/imgs/create-package-screenshot.jpg)
-
 ### 設定する項目
 #### 情報
 * 名前 - パッケージの名前
