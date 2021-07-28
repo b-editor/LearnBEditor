@@ -24,7 +24,10 @@ $ code ./<プロジェクト名>
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <OutputPath>(実行ファイルがあるフォルダ)\user\plugins\(プロジェクト名)</OutputPath>
+        <!-- Windowsの場合 -->
+        <OutputPath>C:\User\(ユーザー名)\AppData\Roaming\BEditor\plugins\(プロジェクト名)</OutputPath>
+        <!-- UNIXの場合 -->
+        <OutputPath>\home\(ユーザー名)\.beditor\plugins\(プロジェクト名)</OutputPath>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
         <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
@@ -35,14 +38,15 @@ $ code ./<プロジェクト名>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="BEditor.Audio" Version="0.1.3" />
-        <PackageReference Include="BEditor.Compute" Version="0.1.3" />
-        <PackageReference Include="BEditor.Core" Version="0.1.3" />
-        <PackageReference Include="BEditor.Drawing" Version="0.1.3" />
-        <PackageReference Include="BEditor.Graphics" Version="0.1.3" />
-        <PackageReference Include="BEditor.Media" Version="0.1.3" />
-        <PackageReference Include="BEditor.Packaging" Version="0.1.3" />
-        <PackageReference Include="BEditor.Settings" Version="0.1.3" />
+        <PackageReference Include="BEditor.Audio" Version="0.1.4" />
+        <PackageReference Include="BEditor.Base" Version="0.1.4" />
+        <PackageReference Include="BEditor.Compute" Version="0.1.4" />
+        <PackageReference Include="BEditor.Core" Version="0.1.4" />
+        <PackageReference Include="BEditor.Drawing" Version="0.1.4" />
+        <PackageReference Include="BEditor.Graphics" Version="0.1.4" />
+        <PackageReference Include="BEditor.Media" Version="0.1.4" />
+        <PackageReference Include="BEditor.Packaging" Version="0.1.4" />
+        <PackageReference Include="BEditor.Settings" Version="0.1.4" />
     </ItemGroup>
 
 </Project>
@@ -124,5 +128,5 @@ public class Plugin
 dotnet build
 ```
 
-でビルドし、<実行ファイルがあるフォルダ>\user\plugins\<プロジェクト名>\<プロジェクト名>.dllが存在することを確認します。  
+でビルドし、成功したことを確認します。  
 プラグインを管理を開き、読み込まれているプラグインに作成したプラグインがあれば正常に読み込まれています。
