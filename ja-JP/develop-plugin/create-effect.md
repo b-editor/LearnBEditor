@@ -1,6 +1,6 @@
 ## エフェクトを作成する
 
-* [プラグイン用のC#プロジェクトを作成する。](https://beditor.net/Document?page=/develop-plugin/create-project)を参照して、プラグインを作成します。
+* [プラグイン用のC#プロジェクトを作成する。](https://beditor.net/Document/develop-plugin/create-project)を参照して、プラグインを作成します。
 
 ``` C#
 using System.Collections.Generic;

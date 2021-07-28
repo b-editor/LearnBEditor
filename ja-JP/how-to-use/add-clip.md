@@ -1,6 +1,6 @@
 ## クリップの追加
 
-* [プロジェクトを作成](https://beditor.net/Document/?page=how-to-use/create-project&culture=ja-JP)を参照してプロジェクトを作成します。
+* [プロジェクトを作成](https://beditor.net/Document/how-to-use/create-project)を参照してプロジェクトを作成します。
 
 ### 方法1
 * 追加するクリップのアイコンをツールバーからタイムラインにドラッグアンドドロップして追加します。

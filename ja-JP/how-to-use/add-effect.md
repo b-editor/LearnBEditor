@@ -1,6 +1,6 @@
 ## エフェクトの追加
 
-* [クリップの追加](https://beditor.net/Document/?page=how-to-use/add-clip&culture=ja-JP)を参照してクリップを追加します。
+* [クリップの追加](https://beditor.net/Document/how-to-use/add-clip)を参照してクリップを追加します。
 
 ### 方法1
 * 追加するエフェクトをライブラリからプロパティにドラッグアンドドロップして追加します。
