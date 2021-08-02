@@ -26,7 +26,7 @@ $ code ./<プロジェクト名>
         <TargetFramework>net5.0</TargetFramework>
         <!--Windows-->
         <OutputPath>C:\Users\(ユーザー名)\AppData\Roaming\BEditor\plugins\(プロジェクト名)</OutputPath>
-        <!--Unix-->
+        <!-- UNIXの場合 -->
         <OutputPath>\home\(ユーザー名)\.beditor\plugins\(プロジェクト名)</OutputPath>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
@@ -39,6 +39,7 @@ $ code ./<プロジェクト名>
 
     <ItemGroup>
         <PackageReference Include="BEditor.Audio" Version="0.1.4" />
+        <PackageReference Include="BEditor.Base" Version="0.1.4" />
         <PackageReference Include="BEditor.Compute" Version="0.1.4" />
         <PackageReference Include="BEditor.Core" Version="0.1.4" />
         <PackageReference Include="BEditor.Drawing" Version="0.1.4" />
