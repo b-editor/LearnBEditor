@@ -17,14 +17,17 @@ $ code ./<プロジェクト名>
 ```
 
 生成された プロジェクトファイル (<プロジェクト名>.csproj)の設定をします。  
-以下をコピペ、(実行ファイルがあるフォルダ)と(プロジェクト名)は置き換えてください。
+以下をコピペ、(ユーザー名)と(プロジェクト名)は置き換えてください。
 
 ``` xml
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <OutputPath>(実行ファイルがあるフォルダ)\user\plugins\(プロジェクト名)</OutputPath>
+        <!--Windows-->
+        <OutputPath>C:\Users\(ユーザー名)\AppData\Roaming\BEditor\plugins\(プロジェクト名)</OutputPath>
+        <!--Unix-->
+        <OutputPath>\home\(ユーザー名)\.beditor\plugins\(プロジェクト名)</OutputPath>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
         <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
@@ -35,14 +38,14 @@ $ code ./<プロジェクト名>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="BEditor.Audio" Version="0.1.3" />
-        <PackageReference Include="BEditor.Compute" Version="0.1.3" />
-        <PackageReference Include="BEditor.Core" Version="0.1.3" />
-        <PackageReference Include="BEditor.Drawing" Version="0.1.3" />
-        <PackageReference Include="BEditor.Graphics" Version="0.1.3" />
-        <PackageReference Include="BEditor.Media" Version="0.1.3" />
-        <PackageReference Include="BEditor.Packaging" Version="0.1.3" />
-        <PackageReference Include="BEditor.Settings" Version="0.1.3" />
+        <PackageReference Include="BEditor.Audio" Version="0.1.4" />
+        <PackageReference Include="BEditor.Compute" Version="0.1.4" />
+        <PackageReference Include="BEditor.Core" Version="0.1.4" />
+        <PackageReference Include="BEditor.Drawing" Version="0.1.4" />
+        <PackageReference Include="BEditor.Graphics" Version="0.1.4" />
+        <PackageReference Include="BEditor.Media" Version="0.1.4" />
+        <PackageReference Include="BEditor.Packaging" Version="0.1.4" />
+        <PackageReference Include="BEditor.Settings" Version="0.1.4" />
     </ItemGroup>
 
 </Project>
@@ -104,7 +107,7 @@ public class SamplePlugin : PluginObject
     // 公開する場合はGUID生成ツールなどで生成したIdを指定してください。
     public override Guid Id { get; } = Guid.Parse("00000000-0000-0000-0000-000000000000");
 
-    // プラグインの設定、詳しくは https://github.com/b-editor/BEditor/blob/main/extensions/BEditor.Extensions.AviUtl/EntryPlugin.cs#L360 をご覧ください。
+    // プラグインの設定、詳しくは https://github.com/b-editor/BEditor/blob/main/extensions/BEditor.Extensions.AviUtl/EntryPlugin.cs#L379 をご覧ください。
     public override SettingRecord Settings { get; set; } = new();
 }
 
@@ -124,5 +127,5 @@ public class Plugin
 dotnet build
 ```
 
-でビルドし、<実行ファイルがあるフォルダ>\user\plugins\<プロジェクト名>\<プロジェクト名>.dllが存在することを確認します。  
+でビルドし、Windowsの場合は `C:\Users\(ユーザー名)\AppData\Roaming\BEditor\plugins\(プロジェクト名)\(プロジェクト名).dll` , Unixの場合は `\home\(ユーザー名)\.beditor\plugins\(プロジェクト名)\(プロジェクト名).dll` が存在することを確認します。  
 プラグインを管理を開き、読み込まれているプラグインに作成したプラグインがあれば正常に読み込まれています。

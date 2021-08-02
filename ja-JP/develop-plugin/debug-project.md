@@ -1,6 +1,6 @@
 ## プロジェクトをデバッグする。
 
-このページでは [プラグイン用のC#プロジェクトを作成する。](https://beditor.net/Document?page=/develop-plugin/create-project) で作成したプロジェクトを Visual Studio Code でデバッグする方法を説明します。
+このページでは [プラグイン用のC#プロジェクトを作成する。](https://beditor.net/Document/develop-plugin/create-project) で作成したプロジェクトを Visual Studio Code でデバッグする方法を説明します。
 
 ### ワークスペースを作成。
 

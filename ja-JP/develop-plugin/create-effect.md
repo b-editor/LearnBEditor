@@ -1,6 +1,6 @@
 ## エフェクトを作成する
 
-* [プラグイン用のC#プロジェクトを作成する。](https://beditor.net/Document?page=/develop-plugin/create-project)を参照して、プラグインを作成します。
+* [プラグイン用のC#プロジェクトを作成する。](https://beditor.net/Document/develop-plugin/create-project)を参照して、プラグインを作成します。
 
 ``` C#
 using System.Collections.Generic;
@@ -58,7 +58,7 @@ public class Plugin
     public static void Register(string[] args)
     {
         PluginBuilder.Configure<SamplePlugin>()
-            .With(new EffectMetadata("空のエフェクト", () => new BlankEffect()))
+            .With(EffectMetadata.Create<BlankEffect>("空のエフェクト"))
             .Register();
     }
 }
@@ -81,7 +81,7 @@ using BEditor.Drawing.Pixel;
 
 public class BlankEffect : ImageEffect
 {
-    public static readonly DirectEditingProperty<BlankEffect, CheckProperty> CheckBoxProperty
+    public static readonly DirectProperty<BlankEffect, CheckProperty> CheckBoxProperty
         = EditingProperty.RegisterDirect<CheckProperty, BlankEffect>(
             nameof(Checkbox),
             owner => owner.CheckBox,
@@ -123,9 +123,9 @@ public class BlankEffect : ImageEffect
     * ExpandGroup - プロパティをエクスパンダでまとめます。
         * Coordinate - XYZ, CenterXYZの座標を設定します。
         * Blend - 透明度、色、合成モードを設定します。
-        * Angle - XYZ軸の角度を設定します。
+        * Rotate - XYZ軸の角度を設定します。
         * Material - 環境色、反射色、輝きを設定します。
-        * Zoom - XYZのスケールを設定します。
+        * Scale - XYZのスケールを設定します。
     * DialogProperty - プロパティをダイアログでまとめます。
 * FileProperty - ファイルを設定します。
 * FolderProperty - フォルダを設定します。
