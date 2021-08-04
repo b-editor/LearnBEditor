@@ -2,15 +2,11 @@
 
 ### Example
 
-![](https://beditor.net/imgs/example/binarization.jpg)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/binarization.jpg)
 
 ### Description
 
 画像を２階調化します。
-
-### Remarks
-
-このエフェクトはGpu処理に対応しています。
 
 ### Properties
 
@@ -22,5 +18,4 @@
 
 ### Source codes
 
-* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/PrimitiveImages/Binarization.cs)
-* [エフェクトの処理](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Drawing/PixelOperation/BinarizationOperation.cs)
+* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/libraries/BEditor.Primitive/Effects/PrimitiveImages/Binarization.cs)

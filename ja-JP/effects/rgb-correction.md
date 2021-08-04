@@ -2,15 +2,11 @@
 
 ### Example
 
-![](https://beditor.net/imgs/example/rgb-correction.jpg)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/rgb-correction.jpg)
 
 ### Description
 
 画像を色調を調整します。
-
-### Remarks
-
-このエフェクトはGpu処理に対応しています。
 
 ### Properties
 
@@ -34,5 +30,4 @@
 
 ### Source codes
 
-* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/PrimitiveImages/RGBColor.cs)
-* [エフェクトの処理](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Drawing/PixelOperation/RGBColorOperation.cs)
+* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/libraries/BEditor.Primitive/Effects/PrimitiveImages/RGBColor.cs)

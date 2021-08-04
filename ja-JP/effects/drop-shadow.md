@@ -1,16 +1,8 @@
 ## ドロップシャドウ
 
-### Example
-
-![](https://beditor.net/imgs/example/drop-shadow.jpg)
-
 ### Description
 
 画像に影を付けます。
-
-### Remarks
-
-このエフェクトはSkia実装です。
 
 ### Properties
 
@@ -39,4 +31,4 @@
 
 ### Source codes
 
-* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/PrimitiveImages/Shadow.cs)
+* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/libraries/BEditor.Primitive/Effects/PrimitiveImages/Shadow.cs)

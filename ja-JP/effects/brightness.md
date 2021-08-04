@@ -2,15 +2,11 @@
 
 ### Example
 
-![](https://beditor.net/imgs/example/brightness.jpg)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/brightness-correction.jpg)
 
 ### Description
 
 画像の明るさを調整します。
-
-### Remarks
-
-このエフェクトはGpu処理に対応しています。
 
 ### Properties
 
@@ -22,5 +18,4 @@
 
 ### Source codes
 
-* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/PrimitiveImages/BrightnessCorrection.cs)
-* [エフェクトの処理](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Drawing/PixelOperation/BrightnessOperation.cs)
+* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/libraries/BEditor.Primitive/Effects/PrimitiveImages/BrightnessCorrection.cs)

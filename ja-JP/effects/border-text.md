@@ -2,15 +2,11 @@
 
 ### Example
 
-![](https://beditor.net/imgs/example/border-text.jpg)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/border-text.jpg)
 
 ### Description
 
 テキストオブジェクトを縁取ります。
-
-### Remarks
-
-このエフェクトはSkia実装です。
 
 ### Properties
 
@@ -37,4 +33,4 @@
 
 ### Source codes
 
-* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/PrimitiveImages/StrokeText.cs)
+* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/libraries/BEditor.Primitive/Effects/PrimitiveImages/StrokeText.cs)

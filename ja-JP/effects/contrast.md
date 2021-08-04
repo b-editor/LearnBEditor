@@ -2,15 +2,11 @@
 
 ### Example
 
-![](https://beditor.net/imgs/example/contrast.jpg)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/contrast-correction.jpg)
 
 ### Description
 
 画像のコントラストを調整します。
-
-### Remarks
-
-このエフェクトはGpu処理に対応しています。
 
 ### Properties
 
@@ -22,5 +18,4 @@
 
 ### Source codes
 
-* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/PrimitiveImages/ContrastCorrection.cs)
-* [エフェクトの処理](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Drawing/PixelOperation/ContrastOperation.cs)
+* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/LookupTables/ContrastCorrection.cs)

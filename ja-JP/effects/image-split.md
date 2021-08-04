@@ -2,7 +2,7 @@
 
 ### Example
 
-![](https://beditor.net/imgs/example/image-split.jpg)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/image-split.jpg)
 
 ### Description
 
@@ -22,5 +22,4 @@
 
 ### Source codes
 
-* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/PrimitiveImages/ImageSplit.cs)
-* [エフェクトの処理](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/PrimitiveImages/ImageSplit.cs)
+* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/libraries/BEditor.Primitive/Effects/PrimitiveImages/ImageSplit.cs)

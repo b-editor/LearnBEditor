@@ -2,27 +2,22 @@
 
 ### Example
 
-![](https://beditor.net/imgs/example/color-key.jpg)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/color-key.jpg)
 
 ### Description
 
-指定した色に近い色を透明化します。
-
-### Remarks
-
-このエフェクトはGpu処理に対応しています。
+指定した色に近い輝度の色を透明化します。
 
 ### Properties
 
 #### 色
 
-* デフォルト - #FFFFFF
+* デフォルト - #FFFFFFFF
 
-#### 閾値
+#### 色差範囲
 
-* デフォルト - 60
+* デフォルト - 80
 
 ### Source codes
 
-* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/PrimitiveImages/ColorKey.cs)
-* [エフェクトの処理](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Drawing/PixelOperation/ColorKeyOperation.cs)
+* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/libraries/BEditor.Primitive/Effects/PrimitiveImages/ColorKey.cs)

@@ -2,15 +2,11 @@
 
 ### Example
 
-![](https://beditor.net/imgs/example/mask.jpg)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/mask.jpg)
 
 ### Description
 
 指定した画像を元の画像のマスクにします。
-
-### Remarks
-
-このエフェクトはSkia実装です。
 
 ### Properties
 
@@ -50,4 +46,4 @@
 
 ### Source codes
 
-* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/PrimitiveImages/Mask.cs)
+* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/libraries/BEditor.Primitive/Effects/PrimitiveImages/Mask.cs)

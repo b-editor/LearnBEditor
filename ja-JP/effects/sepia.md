@@ -2,17 +2,12 @@
 
 ### Example
 
-![](https://beditor.net/imgs/example/sepia.jpg)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/sepia.jpg)
 
 ### Description
 
 画像のセピア処理します。
 
-### Remarks
-
-このエフェクトはGpu処理に対応しています。
-
 ### Source codes
 
-* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/PrimitiveImages/Sepia.cs)
-* [エフェクトの処理](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Drawing/PixelOperation/SepiaOperation.cs)
+* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/libraries/BEditor.Primitive/Effects/PrimitiveImages/Sepia.cs)

@@ -2,23 +2,26 @@
 
 ### Example
 
-![](https://beditor.net/imgs/example/chroma-key.jpg)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/chroma-key.jpg)
 
 ### Description
 
-緑色に近い色を透明化します。
-
-### Remarks
-
-このエフェクトはGpu処理に対応しています。
+指定した色のに近い色を透明化します。
 
 ### Properties
 
-#### 閾値
+#### 色
 
-* デフォルト - 256
+* デフォルト - #FFFFFFFF
+
+#### 色相範囲
+
+* デフォルト - 80
+
+#### 彩度範囲
+
+* デフォルト - 80
 
 ### Source codes
 
-* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Primitive/Effects/PrimitiveImages/ChromaKey.cs)
-* [エフェクトの処理](https://github.com/b-editor/BEditor/blob/main/src/BEditor.Drawing/PixelOperation/ChromaKeyOperation.cs)
+* [エフェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/libraries/BEditor.Primitive/Effects/PrimitiveImages/ChromaKey.cs)
