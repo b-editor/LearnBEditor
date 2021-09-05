@@ -40,4 +40,4 @@
 
 ### Source codes
 
-* [オブジェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/libraries/BEditor.Primitive/Images/PrimitiveImages/Text.cs)
+* [オブジェクトの定義](https://github.com/b-editor/BEditor/blob/main/src/libraries/BEditor.Primitive/Objects/PrimitiveImages/Text.cs)
