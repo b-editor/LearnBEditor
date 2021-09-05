@@ -11,8 +11,8 @@
 ### [ぼかし](https://beditor.net/Document/effects/blur)
 ![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/blur.jpg)
 
-### [縁取り (テキスト)](https://beditor.net/Document/effects/border-text)
-![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/border-text.jpg)
+### [フラットシャドウ](https://beditor.net/Document/effects/flat-shadow)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/flat-shadow.jpg)
 
 ### [縁取り](https://beditor.net/Document/effects/border)
 ![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/border.jpg)
