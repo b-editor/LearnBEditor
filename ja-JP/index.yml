@@ -23,8 +23,6 @@
       markdown: "effects/binarization.md"
     - header: "ぼかし"
       markdown: "effects/blur.md"
-    - header: "縁取り (テキスト)"
-      markdown: "effects/border-text.md"
     - header: "縁取り"
       markdown: "effects/border.md"
     - header: "明るさ調整"
