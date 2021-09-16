@@ -11,8 +11,8 @@
 ### [ぼかし](https://beditor.net/Document/effects/blur)
 ![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/blur.jpg)
 
-### [縁取り (テキスト)](https://beditor.net/Document/effects/border-text)
-![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/border-text.jpg)
+### [フラットシャドウ](https://beditor.net/Document/effects/flat-shadow)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/flat-shadow.jpg)
 
 ### [縁取り](https://beditor.net/Document/effects/border)
 ![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/border.jpg)
@@ -66,13 +66,13 @@
 ![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/mask.jpg)
 
 ### [多重画像コントロール](https://beditor.net/Document/effects/multiple-controls)
-![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/multiple-controls.jpg)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/part-disasm_and_multiple-control.jpg)
 
 ### [ネガポジ](https://beditor.net/Document/effects/negaposi)
 ![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/negaposi.jpg)
 
 ### [パーツ分解](https://beditor.net/Document/effects/parts-disassembly)
-![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/parts-disassembly.jpg)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/part-disasm_and_multiple-control.jpg)
 
 ### [不透明度を反転](https://beditor.net/Document/effects/reverse-opacity)
 ![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/images/reverse-opacity.jpg)

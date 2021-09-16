@@ -38,15 +38,15 @@ $ code ./<プロジェクト名>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="BEditor.Audio" Version="0.1.4" />
-        <PackageReference Include="BEditor.Base" Version="0.1.4" />
-        <PackageReference Include="BEditor.Compute" Version="0.1.4" />
-        <PackageReference Include="BEditor.Core" Version="0.1.4" />
-        <PackageReference Include="BEditor.Drawing" Version="0.1.4" />
-        <PackageReference Include="BEditor.Graphics" Version="0.1.4" />
-        <PackageReference Include="BEditor.Media" Version="0.1.4" />
-        <PackageReference Include="BEditor.Packaging" Version="0.1.4" />
-        <PackageReference Include="BEditor.Settings" Version="0.1.4" />
+        <PackageReference Include="BEditor.Audio" Version="0.2.0" />
+        <PackageReference Include="BEditor.Base" Version="0.2.0" />
+        <PackageReference Include="BEditor.Compute" Version="0.2.0" />
+        <PackageReference Include="BEditor.Core" Version="0.2.0" />
+        <PackageReference Include="BEditor.Drawing" Version="0.2.0" />
+        <PackageReference Include="BEditor.Graphics" Version="0.2.0" />
+        <PackageReference Include="BEditor.Media" Version="0.2.0" />
+        <PackageReference Include="BEditor.Packaging" Version="0.2.0" />
+        <PackageReference Include="BEditor.Settings" Version="0.2.0" />
     </ItemGroup>
 
 </Project>
