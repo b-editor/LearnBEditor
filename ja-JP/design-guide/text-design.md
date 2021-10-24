@@ -32,6 +32,33 @@
 
 このようにいろいろ試した後に最初のものを見ると見にくいことがわかります。
 
+## フォント
+フォントを工夫すると、動画のユーザー受けが向上します。
+
+厳格な雰囲気のところは固めの(角のとがった)フォントを使ったり、
+商品名や強調したい固有名詞では異なるフォントを使うなど、、、
+
+まずはPCに入ってるデフォルトのフォントの中で遊んで、そこから様々なフォントを入れて使っていくといいと思います。自分は夏の安売りの時にフォントパックを買ってそれを使っています。すごく安いときだと中高生のお小遣い程度でも買えるので、デフォルトやフリーで足りない人はそれを狙ってもいいと思います。
+
+
+先ほどの例でも試してみましょう、
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/design-guide/images/text-design_011.png)
+通常テキストは`GothicDuex-E` (有料)を
+問題集のところは`Windows TV MaruGothic` (フリー)を利用しています。
+
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/design-guide/images/text-design_012.png)
+背景とテキストだけでもフォントを工夫すれば表現できるので、フォントはかなり重要です。
+
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/design-guide/images/text-design_013.png)
+こちらはグラデーションを利用した例です。
+グラデーションを使うと文字自体は見にくくなるので必ずストローク(縁取り)をするようにしましょう。
+フォントは`F66FudeSenkou`(有料)を使っています。
+
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/design-guide/images/text-design_014.png)
+メインフォントは`GothicDuex-E` (有料)で
+高校デビューは`Windows TV MaruGothic` (フリー)を利用しています。
+理想的にはキラキラのアニメーションをつけるとよいでしょう。
+
 ## ストロークに関してのガイド
 ストロークは背景の色と被ってしまっても文字を見やすくするのに非常に役に立ちます。
 しかし、文字色と近い色では意味がありません。
