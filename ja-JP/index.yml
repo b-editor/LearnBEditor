@@ -14,6 +14,14 @@
     - header: "データバインディング"
       markdown: "how-to-use/data-binding.md"
 
+- header: "デザインガイド"
+  description: "動画を作る上で重要なデザインのガイドです。"
+  pages:
+    - header: "概要"
+      markdown: "design-guide/overview.md"
+    - header: "テキストデザイン"
+      markdown: "design-guide/text-design.md"
+
 - header: "エフェクト"
   description: ""
   pages:
