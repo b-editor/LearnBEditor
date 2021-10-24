@@ -5,7 +5,7 @@
 
 ## デザインガイドが必要な理由
 
-![](./images/overview_001.png)
+![](https://raw.githubusercontent.com/b-editor/LearnBEditor/main/ja-JP/design-guide/images/overview_001.png)
 ※2021実戦 化学重要問題集 化学基礎・化学は©数研出版の書籍です。
 
 口で言うよりも、上の画像を見ていただければわかりやすいと思います。
