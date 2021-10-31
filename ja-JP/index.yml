@@ -14,6 +14,16 @@
     - header: "データバインディング"
       markdown: "how-to-use/data-binding.md"
 
+- header: "動画のキホン"
+  description: "動画のキホンについて学びます。"
+  pages:
+    - header: "概要"
+      markdown: "basics/overview.md"
+    - header: "動画とは"
+      markdown: "basics/001_what-is-a-video.md"
+    - header: "解像度"
+      markdown: "basics/002_resolution.md"
+      
 - header: "デザインガイド"
   description: "動画を作る上で重要なデザインのガイドです。"
   pages:
